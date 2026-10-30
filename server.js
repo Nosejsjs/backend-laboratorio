@@ -18,6 +18,13 @@ app.get('/api/mensaje', (req, res) => {
     });
 });
 
+app.get('/api/prueba', (req, res) => {
+    res.json({
+        estado: 'OK',
+        version: 'prueba-2'
+    });
+});
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
